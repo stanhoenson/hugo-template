@@ -7,6 +7,10 @@ menu:
         weight: 5
 ---
 
-# EMAIL ME
+# Get in contact
 
 Send me an email at stan@hoenson.xyz.
+
+## Elsewhere?
+
+No.
