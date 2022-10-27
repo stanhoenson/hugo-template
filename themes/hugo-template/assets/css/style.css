@@ -74,6 +74,7 @@ img {
 body {
     max-width: 36rem;
     margin: 2rem auto;
+    padding: 0 1rem;
 }
 
 main {
@@ -90,6 +91,17 @@ article header p {
 
 article > *:last-child {
     margin-bottom: 0;
+}
+
+@media screen and (max-width: 60em) {
+    body {
+        margin: 0 auto;
+        padding: 1rem;
+    }
+
+    img {
+        width: 80%;
+    }
 }
 
 @media screen and (min-width: 60em) {
