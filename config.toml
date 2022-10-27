@@ -1,3 +1,4 @@
 baseURL = 'http://hugo-template.xyz/'
 languageCode = 'en-us'
 title = 'Hugo Template'
+theme = 'hugo-template'
