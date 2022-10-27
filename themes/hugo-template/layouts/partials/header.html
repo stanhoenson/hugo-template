@@ -1,0 +1,13 @@
+<header>
+    <h2>{{ .Site.Title }}</h2>
+    <nav>
+        {{ $currentPage := . }}
+        {{ range .Site.Menus.main }}
+            {{ if $currentPage.IsMenuCurrent "main" . }}
+                <a class="active" href="{{ .URL }}">{{ .Name }}</a>
+            {{ else }}
+                <a href="{{ .URL }}">{{ .Name }}</a>
+            {{ end }}
+        {{ end }}
+    </nav>
+</header>
