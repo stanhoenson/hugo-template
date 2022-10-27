@@ -2,12 +2,13 @@
     <h2>{{ .Site.Title }}</h2>
     <nav>
         {{ $currentPage := . }}
-        {{ range .Site.Menus.main }}
+        {{ range $index, $entry := .Site.Menus.main }}
+            {{- if gt $index 0 }}, {{ end -}}
             {{ if $currentPage.IsMenuCurrent "main" . }}
                 <a class="active" href="{{ .URL }}">{{ .Name }}</a>
-            {{ else }}
+            {{- else -}}
                 <a href="{{ .URL }}">{{ .Name }}</a>
-            {{ end }}
+            {{- end -}}
         {{ end }}
     </nav>
 </header>

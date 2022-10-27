@@ -1,8 +1,9 @@
 <footer>
     <nav>
-        {{ range .Site.Menus.main }}
+        {{ range $index, $entry := .Site.Menus.main }}
+            {{- if gt $index 0 }}, {{ end -}}
             <a href="{{ .URL }}">{{ .Name }}</a>
-        {{ end }}
+        {{- end -}}
     </nav>
     <p>
         <time>2022</time>

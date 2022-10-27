@@ -46,6 +46,11 @@ em {
 a {
     display: inline-block;
     line-height: 1.5;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 ul {
@@ -110,12 +115,12 @@ article > *:last-child {
 
 @media screen and (min-width: 60em) {
     html {
-        font-size: 1.125rem;
+        font-size: 18px;
     }
 }
 
 @media screen and (min-width: 120em) {
     html {
-        font-size: 1.1375rem;
+        font-size: 20px;
     }
 }
