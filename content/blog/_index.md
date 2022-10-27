@@ -7,3 +7,4 @@ menu:
         weight: 2
 ---
 
+# All posts

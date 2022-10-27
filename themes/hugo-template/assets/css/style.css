@@ -53,6 +53,10 @@ a:hover {
     text-decoration: underline;
 }
 
+a.active {
+    text-decoration: underline;
+}
+
 ul {
     list-style: disc inside;
 }
