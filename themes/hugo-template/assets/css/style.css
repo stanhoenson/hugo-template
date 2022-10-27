@@ -1,7 +1,57 @@
 :root {
+    --serif: serif;
     --sans-serif: sans-serif;
-    --sans-serif: serif;
     --monospace: monospace;
+}
+
+html {
+    font-family: var(--sans-serif);
+    color: hsl(0, 0%, 20%);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+p,
+li {
+    line-height: 1.5;
+}
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+a {
+    display: inline-block;
+    line-height: 1.5;
+}
+
+ul {
+    list-style: disc inside;
+}
+
+ol {
+    list-style: decimal inside;
+}
+
+li > ul,
+li > ol {
+    margin-left: 1rem;
+}
+
+img {
+    width: 100%;
 }
 
 @media screen and (min-width: 60em) {
