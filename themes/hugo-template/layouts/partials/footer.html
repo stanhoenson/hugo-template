@@ -1,0 +1,12 @@
+<footer>
+    <nav>
+        {{ range .Site.Menus.main }}
+            <a href="{{ .URL }}">{{ .Name }}</a>
+        {{ end }}
+    </nav>
+    <p>
+        <time>2022</time>
+        <span>©</span>
+        <a href="/">hugo-template.xyz</a>
+    </p>
+</footer>
