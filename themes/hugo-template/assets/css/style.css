@@ -61,6 +61,10 @@ li > ol {
     margin-left: 1rem;
 }
 
+ul li {
+    margin: -2px 0 0 3px;
+}
+
 li::marker {
     color: hsl(0, 0%, 50%);
     line-height: 1.5;
@@ -78,7 +82,7 @@ body {
 }
 
 main {
-    padding: 1rem 0;
+    padding: 2rem 0;
 }
 
 article header {
