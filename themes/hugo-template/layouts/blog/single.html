@@ -1,0 +1,21 @@
+{{ define "main" }}
+    <article>
+        <h1>{{ .Title }}</h1>
+        <p>Date: {{ .Date.Format "January 2, 2006" }}</p>
+        <p>Author: {{ .Params.Author }}</p>
+        <p>
+            Category:
+            {{ range .Params.Categories }}
+                <a href="/categories/{{ . | urlize }}">{{ . }}</a>
+            {{ end }}
+        </p>
+        <p>
+            Tags:
+            {{ range $index, $tag := .Params.Tags }}
+                {{- if gt $index 0 }}, {{ end -}}
+                <a href="/tags/{{ . | urlize }}">{{ . }}</a>
+            {{- end -}}
+        </p>
+        {{ .Content }}
+    </article>
+{{ end }}
