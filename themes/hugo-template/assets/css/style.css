@@ -19,6 +19,17 @@ h6 {
     line-height: 1.5;
 }
 
+h1 {
+    text-transform: uppercase;
+}
+
+p,
+ul,
+ol,
+img {
+    margin-bottom: 1rem;
+}
+
 p,
 li {
     line-height: 1.5;
@@ -50,18 +61,45 @@ li > ol {
     margin-left: 1rem;
 }
 
+li::marker {
+    color: hsl(0, 0%, 50%);
+    line-height: 1.5;
+}
+
 img {
-    width: 100%;
+    display: block;
+    width: 70%;
+}
+
+body {
+    max-width: 36rem;
+    margin: 2rem auto;
+}
+
+main {
+    padding: 1rem 0;
+}
+
+article header {
+    margin-bottom: 1rem;
+}
+
+article header p {
+    margin-bottom: 0;
+}
+
+article > *:last-child {
+    margin-bottom: 0;
 }
 
 @media screen and (min-width: 60em) {
     html {
-        font-size: 18px;
+        font-size: 1.125rem;
     }
 }
 
 @media screen and (min-width: 120em) {
     html {
-        font-size: 22px;
+        font-size: 1.1375rem;
     }
 }

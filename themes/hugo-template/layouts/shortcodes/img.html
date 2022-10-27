@@ -1,4 +1,4 @@
 {{ $image := resources.GetMatch (.Get "src") }}
-{{ $image := $image.Resize "1080x CatmullRom webp q90" }}
+{{ $image := $image.Resize "900x CatmullRom webp q90" }}
 
 <img src="{{ $image.RelPermalink }}" alt="{{ .Get `alt` }}">
