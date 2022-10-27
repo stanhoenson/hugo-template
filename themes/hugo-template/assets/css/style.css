@@ -1,0 +1,17 @@
+:root {
+    --sans-serif: sans-serif;
+    --sans-serif: serif;
+    --monospace: monospace;
+}
+
+@media screen and (min-width: 60em) {
+    html {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 120em) {
+    html {
+        font-size: 22px;
+    }
+}
