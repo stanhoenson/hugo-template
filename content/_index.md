@@ -7,3 +7,7 @@ menu:
         weight: 1
 ---
 
+# Welcome
+
+This website is not your normal website.
+It's *actually* **simplistic**, maybe even to it's own detriment...
