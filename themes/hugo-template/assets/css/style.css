@@ -45,6 +45,7 @@ em {
 
 a {
     display: inline-block;
+    color: hsl(230, 80%, 50%);
     line-height: 1.5;
     text-decoration: none;
 }
