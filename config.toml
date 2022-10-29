@@ -4,4 +4,4 @@ title = 'Hugo Template'
 theme = 'hugo-template'
 [params]
     author = 'Stan Hoenson'
-    description = 'A blog about the downfall of technology'
+    description = 'A blog about the downfall of technology (and how to fight against it)'

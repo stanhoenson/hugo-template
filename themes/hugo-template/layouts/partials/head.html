@@ -2,7 +2,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="{{ .Site.Params.author }}">
-    <meta name="description" content="{{ .Site.Params.description }}">
+    <meta name="description" content="
+        {{- with .Page.Description -}}
+            {{ . }}
+        {{- else -}}
+            {{ .Site.Params.description }}
+        {{- end -}}">
     <title>{{ .Title }} | {{ .Site.Title }}</title>
     {{ $reset := resources.Get "css/reset.css" | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $reset.RelPermalink }}">
