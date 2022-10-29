@@ -2,3 +2,6 @@ baseURL = 'http://hugo-template.xyz/'
 languageCode = 'en-us'
 title = 'Hugo Template'
 theme = 'hugo-template'
+[params]
+    author = 'Stan Hoenson'
+    description = 'A blog about the downfall of technology'
