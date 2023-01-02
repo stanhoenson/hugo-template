@@ -15,8 +15,6 @@
             {{ .Title }} | {{ .Site.Title }}
         {{- end -}}
     </title>
-    {{ $reset := resources.Get "css/reset.css" | minify | fingerprint }}
-    <link rel="stylesheet" href="{{ $reset.RelPermalink }}">
     {{ $style := resources.Get "css/style.css" | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $style.RelPermalink }}">
     {{ range .AlternativeOutputFormats -}} 

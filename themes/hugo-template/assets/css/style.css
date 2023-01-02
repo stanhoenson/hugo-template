@@ -1,131 +1,23 @@
 :root {
-    --serif: serif;
-    --sans-serif: sans-serif;
-    --monospace: monospace;
-}
-
-html {
-    font-family: var(--sans-serif);
-    color: hsl(0, 0%, 20%);
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: bold;
-    line-height: 1.5;
-}
-
-h1 {
-    text-transform: uppercase;
-}
-
-p,
-ul,
-ol,
-img {
-    margin-bottom: 1rem;
-}
-
-p,
-li {
-    line-height: 1.5;
-}
-
-strong {
-    font-weight: bold;
-}
-
-em {
-    font-style: italic;
-}
-
-a {
-    display: inline-block;
-    color: hsl(230, 80%, 50%);
-    line-height: 1.5;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-a.active {
-    text-decoration: underline;
-}
-
-ul {
-    list-style: disc inside;
-}
-
-ol {
-    list-style: decimal inside;
-}
-
-li > ul,
-li > ol {
-    margin-left: 1rem;
-}
-
-ul li {
-    margin: -2px 0 0 3px;
-}
-
-li::marker {
-    color: hsl(0, 0%, 50%);
-    line-height: 1.5;
-}
-
-img {
-    display: block;
-    width: 70%;
+    --sans-serif: -apple-system, BlinkMacSystemFont, avenir next, avenir, 
+        segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, 
+        arial, sans-serif;
+    --monospace: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, 
+        monospace;
 }
 
 body {
-    max-width: 36rem;
-    margin: 2rem auto;
-    padding: 0 1rem;
+    max-width: 38em;
+    font-family: var(--sans-serif);
+    line-height: 1.5;
+    padding: 1em;
+    margin: 0 auto;
 }
 
-main {
-    padding: 2rem 0;
+code {
+    font-family: var(--monospace);
 }
 
-article header {
-    margin-bottom: 1rem;
-}
-
-article header p {
-    margin-bottom: 0;
-}
-
-article > *:last-child {
-    margin-bottom: 0;
-}
-
-@media screen and (max-width: 60em) {
-    body {
-        margin: 0 auto;
-        padding: 1rem;
-    }
-
-    img {
-        width: 80%;
-    }
-}
-
-@media screen and (min-width: 60em) {
-    html {
-        font-size: 18px;
-    }
-}
-
-@media screen and (min-width: 120em) {
-    html {
-        font-size: 20px;
-    }
+img {
+    width: 100%;
 }
